@@ -11,6 +11,7 @@ public:
     void insert(int pos, int data);
     void show();
     void deleteNode(int data);
+    void clear();
 
 private:
     Node* _head;

@@ -11,5 +11,9 @@ int main()
     
     list.show();
 
+    list.clear();
+
+    list.show();
+
     return 0;
 }
