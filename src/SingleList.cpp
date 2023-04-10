@@ -70,3 +70,26 @@ void List::show()
         current = current->_next;
     }
 }
+
+void List::clear()
+{
+    if (_head == nullptr)
+    {
+        return;
+    }
+
+    if(_head)
+    {
+        Node* current = _head;
+        Node* temp = nullptr;
+
+        while(current != nullptr)
+        {
+            temp = current->_next;
+            delete current;
+            current = temp;
+        }
+
+        _head = nullptr;
+    }
+}
